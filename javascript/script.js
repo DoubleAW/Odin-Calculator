@@ -1,18 +1,15 @@
-const keys = document.getElementById("keys");
 const screenText = document.getElementById("screen-text")
 const preText = document.getElementById("prescreen-text")
 let evaluated = false
-let prevEquation = ""
 let operator = ""
 let changeText = true
 let firstNum = ""
 let secondNum = ""
-let lastClick = ""
 let storedVal = ""
 let lastOp = ""
 
 function valueClicked(btn){
-  
+  console.log(btn)
   if(screenText.textContent.substr(-1) == "." && btn.getAttribute("data-decimal") == "."){
     console.log("no")
   }else{
@@ -128,8 +125,6 @@ function evalEquation(op){
     case "+":
       return ((Math.round(((floatFirst + floatSecond) + Number.EPSILON) * 100)) / 100).toString();
   }
-
-  
 }
 
 function clearClicked(){
@@ -138,5 +133,7 @@ function clearClicked(){
   screenText.textContent = "0"
   operator = ""
   preText.textContent = ""
+  evaluated = false
   changeText = true
 }
+
