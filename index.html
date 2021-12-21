@@ -13,29 +13,29 @@
 <body>
     <div id="calculator">
         <div id="screen">
-            <div id="prescreen-text">test</div>
-            <div id="screen-text"></div>
+            <div id="prescreen-text"></div>
+            <div id="screen-text">0</div>
         </div>
         <div id="keys">
 
             <button class="key"></button>
             <button class="key" onclick="clearClicked()">C</button>
-            <button class="key"></button>
+            <button class="key" onclick="backspaceClicked()">&#8592;</button>
             <button class="key" onclick="operatorClicked(this)" data-operator="/">/</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="7">7</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="8">8</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="9">9</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="7">7</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="8">8</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="9">9</button>
             <button class="key" onclick="operatorClicked(this)" data-operator="*">*</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="4">4</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="5">5</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="6">6</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="4">4</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="5">5</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="6">6</button>
             <button class="key" onclick="operatorClicked(this)" data-operator="-">-</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="1">1</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="2">2</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="3">3</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="1">1</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="2">2</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="3">3</button>
             <button class="key" onclick="operatorClicked(this)" data-operator="+">+</button>
-            <button class="key" onclick="digitClicked(this)" data-digit="0">0</button>
-            <button class="key" onclick="digitClicked(this)" data-decimal=".">.</button>
+            <button class="key" onclick="valueClicked(this)" data-digit="0">0</button>
+            <button class="key" onclick="valueClicked(this)" data-decimal=".">.</button>
             <button class="key" onclick="equalClicked()" id="equal">=</button>
         </div>
     </div>
